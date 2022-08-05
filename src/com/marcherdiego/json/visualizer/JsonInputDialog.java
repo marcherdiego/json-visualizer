@@ -12,7 +12,7 @@ public class JsonInputDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JTextArea json;
-    private Project project;
+    private final Project project;
 
     public JsonInputDialog(Project project) {
         this.project = project;
