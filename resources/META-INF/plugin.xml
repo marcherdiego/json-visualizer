@@ -22,18 +22,22 @@
     <depends>org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- <codeInsight.lineMarkerProvider language="kotlin" implementationClass="com.marcherdiego.json.visualizer.LineMarker"/> -->
-        <!-- <codeInsight.lineMarkerProvider language="JAVA" implementationClass="com.marcherdiego.json.visualizer.LineMarker"/> -->
+        <annotator language="JSON" implementationClass="com.marcherdiego.json.visualizer.LineMarker"/>
     </extensions>
 
     <actions>
-        <action id="JSON Visualizer" class="com.marcherdiego.json.visualizer.JsonVisualizer" text="JSON Visualizer">
+        <action
+            id="JSON Visualizer"
+            class="com.marcherdiego.json.visualizer.JsonVisualizer"
+            text="JSON Visualizer"
+            icon="MyIcons.icon">
             <keyboard-shortcut keymap="$default" first-keystroke="shift meta J" second-keystroke="shift ctrl J"/>
             <add-to-group group-id="ToolsMenu" anchor="first"/>
         </action>
 
         <action id="View JSON"
                 class="com.marcherdiego.json.visualizer.ViewJsonAction"
+                icon="MyIcons.icon"
                 text="View JSON">
             <keyboard-shortcut
                 keymap="$default"
