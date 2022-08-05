@@ -1,6 +1,6 @@
-![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/r/rating/17579)
+![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/r/rating/19644)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcherdiego/json-visualizer)
-![Downloads](https://img.shields.io/jetbrains/plugin/d/17579)
+![Downloads](https://img.shields.io/jetbrains/plugin/d/19644)
 
 
 # JSON Visualizer for Idea-based IDEs

@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.marcherdiego.json.visualizer</id>
     <name>JSON Visualizer</name>
-    <version>1.0.0</version>
+    <version>0.0.0</version>
     <vendor email="diego@marcher.com.uy" url="https://www.marcher.com.uy">Diego Marcher</vendor>
 
     <description><![CDATA[
