@@ -1,23 +1,16 @@
 <idea-plugin>
-    <id>com.marcherdiego.events.navigator</id>
-    <name>Bus Events Navigator</name>
-    <version>1.1.5</version>
-    <vendor email="diego@marcher.com.uy" url="http://www.marcher.com.uy">Diego Marcher</vendor>
+    <id>com.marcherdiego.json.visualizer</id>
+    <name>JSON Visualizer</name>
+    <version>1.0.0</version>
+    <vendor email="diego@marcher.com.uy" url="https://www.marcher.com.uy">Diego Marcher</vendor>
 
     <description><![CDATA[
-        This plugin if highly tied to this <em>MVP library</em>, check it out: <a href="https://github.com/marcherdiego/android_mvp">Library Source</a>
-        <ul>
-            <li>Small plugin to keep track of event-posters for a given subscriber and the subscribers for a given event.</li>
-            <li>It also provides the ability to see the Application's structure based on events posted and received by the presenters.</li>
-        </ul>
+        Tiny plugin to visualize your JSON files
     ]]></description>
 
     <change-notes><![CDATA[
         <ul>
             <li>Initial release</li>
-            <li>Basic wiring for @Subscribe-annotated methods, regardless the posting bus</li>
-            <li>Added subscriber-usages find to be able to navigate to the subscribers of a given posted event</li>
-            <li>Application's architecture based on events posted and subscribed.</li>
         </ul>
     ]]>
     </change-notes>
@@ -26,18 +19,27 @@
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.java</depends>
-    <depends>com.intellij.modules.androidstudio</depends>
     <depends>org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <codeInsight.lineMarkerProvider language="kotlin" implementationClass="com.marcherdiego.events.navigator.LineMarker"/>
-        <codeInsight.lineMarkerProvider language="JAVA" implementationClass="com.marcherdiego.events.navigator.LineMarker"/>
+        <!-- <codeInsight.lineMarkerProvider language="kotlin" implementationClass="com.marcherdiego.json.visualizer.LineMarker"/> -->
+        <!-- <codeInsight.lineMarkerProvider language="JAVA" implementationClass="com.marcherdiego.json.visualizer.LineMarker"/> -->
     </extensions>
 
     <actions>
-        <action id="View App Map Btn" class="com.marcherdiego.events.navigator.ViewAppStructure" text="View Application's Structure">
-            <keyboard-shortcut keymap="$default" first-keystroke="shift meta S" second-keystroke="shift ctrl S"/>
+        <action id="JSON Visualizer" class="com.marcherdiego.json.visualizer.JsonVisualizer" text="JSON Visualizer">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift meta J" second-keystroke="shift ctrl J"/>
             <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+
+        <action id="View JSON"
+                class="com.marcherdiego.json.visualizer.ViewJsonAction"
+                text="View JSON">
+            <keyboard-shortcut
+                keymap="$default"
+                first-keystroke="shift meta J"
+                second-keystroke="shift ctrl J"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
     </actions>
 
