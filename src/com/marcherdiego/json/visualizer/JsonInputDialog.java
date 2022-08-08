@@ -35,6 +35,7 @@ public class JsonInputDialog extends JDialog {
     private void parseJson() {
         String input = json.getText();
         JsonParser.INSTANCE.parse(project, input);
+        onCancel();
     }
 
     private void onCancel() {

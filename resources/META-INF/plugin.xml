@@ -1,11 +1,17 @@
 <idea-plugin>
     <id>com.marcherdiego.json.visualizer</id>
     <name>JSON Visualizer</name>
-    <version>0.0.0</version>
+    <version>0.2.0</version>
     <vendor email="diego@marcher.com.uy" url="https://www.marcher.com.uy">Diego Marcher</vendor>
 
     <description><![CDATA[
-        Tiny plugin to visualize your JSON files
+        Tiny plugin to visualize your JSON files.
+        You can create a diagram of your JSON files by simply opening them and performing one of the following actions:
+        <ul>
+            <li>Click the JSON icon located in the first line of the file</li>
+            <li>Right click inside the file -> View JSON</li>
+            <li>Tools -> JSON Visualizer -> Paste JSON file -> Parse</li>
+        </ul>
     ]]></description>
 
     <change-notes><![CDATA[
@@ -15,11 +21,9 @@
     ]]>
     </change-notes>
 
-    <idea-version since-build="173.0"/>
+    <idea-version since-build="203.0"/>
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lang</depends>
-    <depends>com.intellij.modules.java</depends>
-    <depends>org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <annotator language="JSON" implementationClass="com.marcherdiego.json.visualizer.LineMarker"/>
