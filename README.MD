@@ -19,6 +19,9 @@ You can create a diagram of your JSON files by simply opening them and performin
 <img width="800" alt="Screen Shot 2022-08-08 at 11 02 37 AM" src="https://user-images.githubusercontent.com/4492972/183437745-d0c79420-18d3-4482-929c-c746acca1417.png">
 
 
+# Mentions
+Special thanks to [PlantUML](https://github.com/plantuml/plantuml): this plugin wouldn't be possible with your help!
+
 License
 =======
 
