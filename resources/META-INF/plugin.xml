@@ -1,22 +1,24 @@
 <idea-plugin>
     <id>com.marcherdiego.json.visualizer</id>
     <name>JSON Visualizer</name>
-    <version>0.2.0</version>
+    <version>1.0.0</version>
     <vendor email="diego@marcher.com.uy" url="https://www.marcher.com.uy">Diego Marcher</vendor>
 
     <description><![CDATA[
-        Tiny plugin to visualize your JSON files.
-        You can create a diagram of your JSON files by simply opening them and performing one of the following actions:
+        Tiny plugin to visualize your JSON files. <br/>
+        You can create a diagram of your JSON files by simply opening them and performing one of the following actions: <br/>
         <ul>
             <li>Click the JSON icon located in the first line of the file</li>
             <li>Right click inside the file -> View JSON</li>
             <li>Tools -> JSON Visualizer -> Paste JSON file -> Parse</li>
-        </ul>
+        </ul> <br/>
+        Mentions <br/>
+        Special thanks to <a href="https://github.com/plantuml/plantuml">PlantUML</a>: this plugin wouldn't be possible with your help!
     ]]></description>
 
     <change-notes><![CDATA[
         <ul>
-            <li>Initial release</li>
+            <li>Added mentions section</li>
         </ul>
     ]]>
     </change-notes>

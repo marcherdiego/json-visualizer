@@ -24,7 +24,14 @@ object JsonParser {
 
     fun parse(project: Project, input: String) {
         val outputFile = File.createTempFile("temp_json", ".png")
-        SourceStringReader("@startjson\n$input\n@endjson").outputImage(SFile.fromFile(outputFile))
+        val inputString = StringBuilder()
+            .append("@startjson\n")
+            .append(input)
+            .append("\n@endjson")
+        SourceStringReader(inputString.toString())
+            .outputImage(
+                SFile.fromFile(outputFile)
+            )
         LocalFileSystem.getInstance().refresh(false)
         val virtualFile = LocalFileSystem.getInstance().findFileByIoFile(outputFile) ?: return
         FileEditorManager.getInstance(project).openFileEditor(OpenFileDescriptor(project, virtualFile), true)
