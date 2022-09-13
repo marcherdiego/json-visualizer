@@ -2,7 +2,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcherdiego/json-visualizer)
 ![Downloads](https://img.shields.io/jetbrains/plugin/d/19644)
 
-[![Get from Marketplace](button.png "Download plugin")](https://plugins.jetbrains.com/embeddable/install/1964)
+[![Get from Marketplace](button.png "Download plugin")](https://plugins.jetbrains.com/embeddable/install/19644)
 
 # JSON Visualizer for Idea-based IDEs
 Tiny plugin to visualize your JSON files.
