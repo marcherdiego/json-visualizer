@@ -20,7 +20,7 @@ You can create a diagram of your JSON files by simply opening them and performin
 
 
 # Mentions
-Special thanks to [PlantUML](https://github.com/plantuml/plantuml): this plugin wouldn't be possible with your help!
+Special thanks to [PlantUML](https://github.com/plantuml/plantuml): this plugin wouldn't be possible without your help!
 
 License
 =======
