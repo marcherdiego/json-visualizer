@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.marcherdiego.json.visualizer</id>
     <name>JSON Visualizer</name>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <vendor email="diego@marcher.com.uy" url="https://www.marcher.com.uy">Diego Marcher</vendor>
 
     <description><![CDATA[
@@ -18,7 +18,7 @@
 
     <change-notes><![CDATA[
         <ul>
-            <li>Added mentions section</li>
+            <li>Updated PlantUML library version</li>
         </ul>
     ]]>
     </change-notes>
@@ -52,5 +52,4 @@
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
     </actions>
-
 </idea-plugin>

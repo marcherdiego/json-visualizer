@@ -25,7 +25,7 @@ Special thanks to [PlantUML](https://github.com/plantuml/plantuml): this plugin 
 License
 =======
 
-    Copyright 2022 Diego Marcher.
+    Copyright 2025 Diego Marcher.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -38,3 +38,27 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+## Building and Running with Gradle
+
+This project uses the Gradle IntelliJ Plugin for building and running the plugin.
+
+### Build the plugin
+
+```sh
+gradle build
+```
+
+### Run the plugin in a sandboxed IDE
+
+```sh
+gradle runIde
+```
+
+### Package the plugin for distribution
+
+```sh
+gradle buildPlugin
+```
+
+For more information, see the [Gradle IntelliJ Plugin documentation](https://plugins.jetbrains.com/docs/intellij/gradle.html).

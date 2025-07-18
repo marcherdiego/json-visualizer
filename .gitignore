@@ -1,14 +1,15 @@
-# Ignore Gradle build output directory
+# Gradle
 .gradle/
 build/
-out/
+!gradle/wrapper/gradle-wrapper.jar
 
-# Android Studio & IntelliJ
+# IntelliJ
+out/
 .idea/
 *.iml
 
+# OS
 .DS_Store
-.navigation/
 
 # Log Files
 *.log

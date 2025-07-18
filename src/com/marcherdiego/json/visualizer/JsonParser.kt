@@ -33,8 +33,12 @@ object JsonParser {
                 SFile.fromFile(outputFile)
             )
         LocalFileSystem.getInstance().refresh(false)
-        val virtualFile = LocalFileSystem.getInstance().findFileByIoFile(outputFile) ?: return
-        FileEditorManager.getInstance(project).openFileEditor(OpenFileDescriptor(project, virtualFile), true)
+        val virtualFile = LocalFileSystem
+            .getInstance()
+            .findFileByIoFile(outputFile) ?: return
+        FileEditorManager
+            .getInstance(project)
+            .openFileEditor(OpenFileDescriptor(project, virtualFile), true)
         Timer().schedule(1000L) {
             outputFile.deleteOnExit()
         }
